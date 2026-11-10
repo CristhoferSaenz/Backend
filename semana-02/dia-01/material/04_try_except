@@ -1,0 +1,20 @@
+# try - except
+# vamos a lograr que el programa no se detenga si ocurre un error, sino que lo maneje de manera adecuada.
+
+try:
+    numero = int(input("Ingrese un número: "))
+    if numero < 0:
+        raise Exception("El número no puede ser negativo.")
+    print(f"El número ingresado es: {numero}")  
+
+except Exception as e:
+    print(f"Error: {e}")
+finally:
+    print("Fin del programa.")  
+
+# Capturar errores específicos
+# valueError: ocurre cuando se intenta convertir un valor a un tipo de dato incorrecto.
+# zeroDivisionError: ocurre cuando se intenta dividir un número por cero.
+# nameError: ocurre cuando se intenta usar una variable que no ha sido definida.
+# importError: ocurre cuando se intenta importar un módulo que no existe.
+# exception: es la clase base para todas las excepciones, se puede usar para capturar cualquier error que ocurra.
