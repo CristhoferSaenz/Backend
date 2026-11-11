@@ -1,4 +1,3 @@
-# Tragamonedas
 import random
 
 class Tragamonedas:
